@@ -3,6 +3,11 @@ module.exports = {
   entry: './src/App.tsx',
   devtool: 'inline-source-map',
   // watch: 'true', // Let the building process watch for changes
+  devServer: {
+    contentBase: './public',
+    compress: true,
+    port: 8080
+  },
   module: {
     rules: [
       {
@@ -22,8 +27,8 @@ module.exports = {
     ]
   },
   output: {
-    path: __dirname + '/dist',
+    path: `${__dirname}/dist`,
     publicPath: '/dist',
     filename: 'bundle.js'
   }
-}
+};
