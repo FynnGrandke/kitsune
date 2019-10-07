@@ -1,0 +1,42 @@
+{
+  "name": "kitsune",
+  "version": "0.0.1",
+  "description": "react app with an interactive UI to make it possible to exchange messages between strangers",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack-dev-server --open",
+    "build": "webpack",
+    "start": "npm run build && npm run serve",
+    "lint": "eslint src/**/*",
+    "fix": "eslint --fix src/**/*.tsx"
+  },
+  "keywords": [
+    "kitsune",
+    "react",
+    "strangers"
+  ],
+  "author": "Fynn Grandke",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.36.1",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/react-dom": "^16.8.5",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.1.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "style-loader": "^0.23.1",
+    "typescript": "^3.5.3",
+    "webpack-cli": "^3.3.6"
+  }
+}
