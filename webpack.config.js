@@ -1,10 +1,12 @@
+const path = require('path');
+
 module.exports = {
   mode: 'development',
   entry: './src/App.tsx',
   devtool: 'inline-source-map',
   // watch: 'true', // Let the building process watch for changes
   devServer: {
-    contentBase: './public',
+    contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 8080
   },
