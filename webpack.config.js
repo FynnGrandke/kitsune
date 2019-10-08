@@ -6,7 +6,7 @@ module.exports = {
   devtool: 'inline-source-map',
   // watch: 'true', // Let the building process watch for changes
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'public'),
     compress: true,
     port: 8080
   },
@@ -25,7 +25,11 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
-      }
+      },
+      {
+        test: /\.jpg$/,
+        use: ['file-loader']
+      },
     ]
   },
   output: {

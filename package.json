@@ -2,7 +2,7 @@
   "name": "kitsune",
   "version": "0.0.1",
   "description": "react app with an interactive UI to make it possible to exchange messages between strangers",
-  "main": "index.js",
+  "main": "public/index.html",
   "scripts": {
     "serve": "webpack-dev-server --open",
     "build": "webpack",
@@ -35,6 +35,7 @@
     "css-loader": "^3.1.0",
     "eslint": "^6.1.0",
     "eslint-plugin-react": "^7.14.3",
+    "file-loader": "^4.2.0",
     "style-loader": "^0.23.1",
     "typescript": "^3.5.3",
     "webpack-cli": "^3.3.6"
