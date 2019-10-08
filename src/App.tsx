@@ -1,8 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
-import './css/main.css';
+import './../public/css/demo.css';
+import './../public/css/fox.css';
+import './../public/css/main.css';
 
 render(
-  <div id="something" />,
+  <div>something</div>,
   document.getElementById('root')
 );
