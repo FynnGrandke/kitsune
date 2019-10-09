@@ -36,7 +36,9 @@
     "eslint": "^6.1.0",
     "eslint-plugin-react": "^7.14.3",
     "file-loader": "^4.2.0",
+    "postcss-loader": "^3.0.0",
     "style-loader": "^0.23.1",
+    "tailwindcss": "^1.1.2",
     "typescript": "^3.5.3",
     "webpack-cli": "^3.3.6"
   }
