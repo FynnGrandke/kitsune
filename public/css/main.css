@@ -19,6 +19,11 @@ body {
   top: 100px;
 }
 
+.menuButton {
+  left: 50%;
+  top: 2vh;
+}
+
 .messageInput {
   resize: none;
 }
