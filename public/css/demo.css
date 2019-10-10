@@ -38,7 +38,7 @@ a:hover, a:focus {
 	pointer-events: none;
 }
 
-.container {
+.foxContainer {
 	overflow: hidden;
 	width: 100vw;
 	height: 100vh;

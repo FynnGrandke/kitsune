@@ -1,8 +1,30 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
 body {
   margin: 0;
+  height: 100vh;
+  background-color: red;
 }
 
-/* Night sky NOT YET USED */
+.inputField {
+  position: absolute;
+  z-index: 99;
+  background-color: white;
+  /* border-radius: 15px; */
+  left: 10%;
+  top: 100px;
+}
+
+.messageInput {
+  resize: none;
+}
+
+
+/* Night sky NOT YET USED but intended for dark theme */
 /* ============================================================================================== 
 SED Innovations
 https://sed.am
