@@ -21,7 +21,7 @@ export class ReplyMessage extends React.Component<{}, State> {
   }
 
   buttonClick(event) {
-    // TODO: Send reply and get new messegae from server
+    // TODO: Send reply and get new messege from server
     event.preventDefault();
   }
 
@@ -53,7 +53,7 @@ export class ReplyMessage extends React.Component<{}, State> {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline messageInput"
               rows={6}
               id="message"
-              placeholder="How can you help?"
+              placeholder="Can you give a helpful reply?"
               onChange={this.handleChange}
             />
           </div>
