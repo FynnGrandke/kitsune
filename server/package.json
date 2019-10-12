@@ -1,0 +1,22 @@
+{
+  "name": "kitsune.server",
+  "version": "0.0.1",
+  "description": "Light weight for the kitsune app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "server",
+    "kitsune",
+    "rest"
+  ],
+  "author": "Fynn Grandke",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.4"
+  }
+}
