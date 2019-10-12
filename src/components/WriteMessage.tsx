@@ -1,4 +1,5 @@
 import React from 'react';
+import { sendMessage } from '../auxiliary/sendMessage';
 
 interface State {
   message: string;
@@ -22,7 +23,12 @@ export class WriteMessage extends React.Component<{}, State> {
   buttonClick(event) {
     // TODO: Save the message on the server
     event.preventDefault();
-    this.setState({ id: this.createId() });
+
+    const newId = this.createId();
+
+    sendMessage({ id: newId, message: this.state.message });
+
+    this.setState({ id: newId });
   }
 
   createId() {
