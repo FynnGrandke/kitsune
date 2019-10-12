@@ -8,13 +8,20 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     compress: true,
-    port: 8080
+    port: 8080,
+    proxy: {
+      '/entries': {
+        target: 'http://localhost:3000',
+        secure: false,
+        changeOrigin: true
+      }
+    }
   },
   module: {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        exclude: /node-modules/,
+        exclude: [/node-modules/, /server/],
         use: {
           loader: 'babel-loader'
         },
