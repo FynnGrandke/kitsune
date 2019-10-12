@@ -21,7 +21,7 @@ export class ReplyMessage extends React.Component<{}, State> {
   }
 
   buttonClick(event) {
-    // TODO: Send reply and get new messege from server
+    // TODO: Send reply and get new message from server
     event.preventDefault();
   }
 
