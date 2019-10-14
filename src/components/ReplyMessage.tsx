@@ -20,6 +20,13 @@ export class ReplyMessage extends React.Component<{}, State> {
     this.createCapitalLetter = this.createCapitalLetter.bind(this);
   }
 
+  async componentDidMount(): Promise<void> {
+    const reply = await fetch('/entries');
+    const myJson = await reply.json();
+
+    this.setState({ message: myJson.message });
+  }
+
   buttonClick(event) {
     // TODO: Send reply and get new message from server
     event.preventDefault();
