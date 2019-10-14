@@ -36,8 +36,6 @@ export class WriteMessage extends React.Component<{}, State> {
   }
 
   handleChange(event) {
-    console.log(event.target.value);
-
     this.setState({ message: event.target.value });
   }
 
