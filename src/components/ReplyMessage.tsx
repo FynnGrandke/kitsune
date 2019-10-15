@@ -1,4 +1,5 @@
 import React from 'react';
+import { addReply } from '../auxiliary/addReply';
 
 interface State {
   message: string;
@@ -24,11 +25,12 @@ export class ReplyMessage extends React.Component<{}, State> {
     const reply = await fetch('/entries');
     const myJson = await reply.json();
 
-    this.setState({ message: myJson.message });
+    this.setState({ message: myJson.message, id: myJson.id });
   }
 
   buttonClick(event) {
-    // TODO: Send reply and get new message from server
+    addReply({ id: this.state.id, reply: this.state.message });
+
     event.preventDefault();
   }
 
