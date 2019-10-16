@@ -8,7 +8,7 @@ interface State {
 
 export class ReplyMessage extends React.Component<{}, State> {
 
-  constructor(props) {
+  constructor(props: {}) {
     super(props);
 
     this.state = {
@@ -28,7 +28,7 @@ export class ReplyMessage extends React.Component<{}, State> {
     this.setState({ message: myJson.message, id: myJson.id });
   }
 
-  buttonClick(event) {
+  buttonClick(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     addReply({ id: this.state.id, reply: this.state.message });
 
     event.preventDefault();
@@ -38,7 +38,7 @@ export class ReplyMessage extends React.Component<{}, State> {
     return String.fromCharCode(Math.floor((Math.random() * (90 - 65)) + 65));
   }
 
-  handleChange(event) {
+  handleChange(event: React.ChangeEvent<HTMLTextAreaElement>) {
     this.setState({ message: event.target.value });
   }
 
