@@ -20,8 +20,7 @@ export class WriteMessage extends React.Component<{}, State> {
     this.buttonClick = this.buttonClick.bind(this);
   }
 
-  buttonClick(event) {
-    // TODO: Save the message on the server
+  buttonClick(event: React.MouseEvent) {
     event.preventDefault();
 
     const newId = this.createId();
@@ -35,7 +34,7 @@ export class WriteMessage extends React.Component<{}, State> {
     return Math.random().toString(36).substring(4);
   }
 
-  handleChange(event) {
+  handleChange(event: React.ChangeEvent<HTMLTextAreaElement>) {
     this.setState({ message: event.target.value });
   }
 
