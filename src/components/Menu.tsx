@@ -30,6 +30,7 @@ export class Menu extends React.Component<{}, State> {
     return (
       <div>
         <div className="absolute flex flex-row content-between z-10 menuButton">
+          {/* TODO: Add fancier buttons instead of these ugly icons */}
           <button className="text-4xl overflow-hidden m-4 h-10" onClick={this.changeComponentToMessage}>❤️</button>
           <button className="text-5xl overflow-hidden m-4 h-10" style={{ lineHeight: '3.2rem' }} onClick={this.changeComponentToReply}>💌</button>
         </div>
