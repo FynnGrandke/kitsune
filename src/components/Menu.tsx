@@ -6,6 +6,7 @@ interface State {
   visibleComponent: JSX.Element;
 }
 
+// The menu which enables to switch between writing a reply or a message
 export class Menu extends React.Component<{}, State> {
   constructor(props) {
     super(props);

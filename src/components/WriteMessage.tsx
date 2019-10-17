@@ -6,6 +6,7 @@ interface State {
   id: string;
 }
 
+// Allows to write a random message to which others can reply
 export class WriteMessage extends React.Component<{}, State> {
 
   constructor(props) {

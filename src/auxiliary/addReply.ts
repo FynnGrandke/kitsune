@@ -1,4 +1,4 @@
-
+// Adds an reply to a message via PUT
 export const addReply = (data) => {
   const request = new XMLHttpRequest();
   const dataAsString = JSON.stringify(data);

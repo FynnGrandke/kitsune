@@ -1,5 +1,4 @@
-
-
+// Sends a message via POST
 export const sendMessage = (data) => {
   const request = new XMLHttpRequest();
   const dataAsString = JSON.stringify(data);
