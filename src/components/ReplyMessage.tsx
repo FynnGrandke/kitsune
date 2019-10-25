@@ -6,6 +6,8 @@ interface State {
   id: string;
 }
 
+// FIXME: If the button is clicked again the name changes but the messages and everything stays the same
+
 // Allows to write a reply to a random message
 export class ReplyMessage extends React.Component<{}, State> {
 
