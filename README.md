@@ -22,17 +22,29 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-No requirements
+MongoDB
 
 ### Installing
 
-Install the dependencies...
+Install the dependencies in the main directory and in the /server subdirectory.
 
 ```
 npm i
 ```
 
-...and try it out with 
+Start your MondoDB Server 
+
+```
+mongod --config /usr/local/etc/mongod.conf
+```
+
+Then the server in the subdirectory
+
+```
+npm start
+```
+
+And after that in the main directory
 
 ```
 npm start
@@ -40,11 +52,12 @@ npm start
 
 ## Running the tests
 
-Tests are to be implemented at a later stage of this project.
+Tests are to be implemented at a later stage of this project. (TODO: SOON!)
 
 ## Built With
 
 * [react](https://github.com/facebook/react) - JavaScript library for building user interface
+* [MongoDB](https://www.mongodb.com/) - The database for modern applications
 
 ## Contributing
 
