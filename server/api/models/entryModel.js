@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
-
+// Schema after mongoose
 const entrySchema = new Schema({
   id: {
     type: String,

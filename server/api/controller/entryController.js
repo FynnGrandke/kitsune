@@ -1,5 +1,7 @@
 'use strict';
 
+// Controller defining the responses
+
 const mongoose = require('mongoose');
 const Entries = mongoose.model('Entries');
 

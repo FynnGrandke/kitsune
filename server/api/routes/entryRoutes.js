@@ -1,4 +1,6 @@
 'use strict';
+
+
 module.exports = function(app) {
   const entries = require('../controller/entryController');
 
