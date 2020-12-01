@@ -1,6 +1,7 @@
 # Kitsune
 
 The vision for this app is that it connects strangers with each other by exchanging little notes. Mostly aimed to lighten up the day of someone else!
+![This is how it looks like](public/img/Kitsune-Gif.gif)
 
 ## Vision
 
@@ -66,6 +67,10 @@ Not yet available - in the meantime write me a message!
 ## Authors
 
 * **Fynn Grandke** - *Initial work* - [FynnGrandke](https://github.com/FynnGrandke)
+
+## Special Thanks
+
+* **David Khourshid** - Thank you for this awesome background [AnimatedAnimals](https://github.com/codrops/AnimatedAnimals)
 
 ## License
 
