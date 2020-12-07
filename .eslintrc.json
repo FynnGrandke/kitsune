@@ -61,7 +61,7 @@
         "react/jsx-uses-react": "error",
         "semi": [
             "error",
-            "always"
+            "never"
         ],
         "space-before-function-paren": [
             "error",
